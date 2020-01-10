@@ -33,7 +33,7 @@
         </a>
       </div>
 
-      <!-- acivities cards -->
+      <!-- services cards -->
       <div class="">
         <div class="card">
           <figure>
