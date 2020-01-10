@@ -79,7 +79,15 @@
           </div>
         </div>
       </div>
-          <h5 class="text-uppercase mt-5 text-center">Our Trading Strategy</h5>
+
+      <div class="container">
+         <h5 class="text-uppercase trading text-center">Our Trading Strategy</h5>
+          <ul>
+            <li>Bull<span>To increase</span></li>
+            <li>Bear<span>To decrease</span></li>
+            <li>Flat<span>Quotation</span></li>
+          </ul>
+      </div>
     </section>
   </div>
 </template>
@@ -125,6 +133,12 @@
   cursor: pointer;
 }
 
+.trading{
+  margin-top: 100px;
+}
+
+
+
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
@@ -132,6 +146,9 @@
     display: block;
     margin-bottom: 20px;
   }
+  .row {
+    margin: 0px;
+    }
 }
 
 </style>
