@@ -6,31 +6,31 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-uppercase" href="#">About the company </a>
+                        <a class="nav-link text-uppercase p-3" href="#">About the company </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Investments</a>
+                        <a class="nav-link text-uppercase p-3" href="#">Investments</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Career</a>
+                        <a class="nav-link text-uppercase p-3" href="#">Career</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Reference</a>
+                        <a class="nav-link text-uppercase p-3" href="#">Reference</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Reviews</a>
+                        <a class="nav-link text-uppercase p-3" href="#">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Contacts</a>
+                        <a class="nav-link text-uppercase p-3" href="#">Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Log In</a>
+                        <a class="nav-link text-uppercase p-3" href="#">Log In</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             English
                         </a>
@@ -45,3 +45,29 @@
         </nav>
     </div>
 </template>
+
+
+<style scoped>
+
+/* fonts */
+@font-face {
+    font-family: "helvetica-neue-cyr-black";
+    src: url("../assets/fonts/HelveticaNeueCyr-Black.otf") format("woff"),
+        url("../assets/fonts/HelveticaNeueCyr-Black.otf") format("opentype"),
+        url("../assets/fonts/HelveticaNeueCyr-Black.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "helvetica-neue-cyr-bold";
+    src: url("../assets/fonts/HelveticaNeueCyr-Bold.otf") format("woff"),
+        url("../assets/fonts/HelveticaNeueCyr-Bold.otf") format("opentype"),
+        url("../assets/fonts/HelveticaNeueCyr-Bold.otf") format("truetype");
+}
+
+nav a {
+    font-size: 0.8rem;
+    font-family: 'helvetica-neue-cyr-bold';
+    color: #333333;
+    padding: 1.2rem;
+}
+</style>

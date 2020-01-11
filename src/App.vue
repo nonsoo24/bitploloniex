@@ -9,8 +9,21 @@
 </template>
 
 <style>
+@font-face {
+    font-family: "helvetica-neue-cyr-black";
+    src: url("/assets/fonts/HelveticaNeueCyr-Black.otf") format("woff"),
+        url("/assets/fonts/HelveticaNeueCyr-Black.otf") format("opentype"),
+        url("/assets/fonts/HelveticaNeueCyr-Black.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "helvetica-neue-cyr-bold";
+    src: url("/assets/fonts/HelveticaNeueCyr-Bold.otf") format("woff"),
+        url("/assets/fonts/HelveticaNeueCyr-Bold.otf") format("opentype"),
+        url("/assets/fonts/HelveticaNeueCyr-Bold.otf") format("truetype");
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'helvetica-neue-cyr-bold', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -28,5 +41,10 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 </style>

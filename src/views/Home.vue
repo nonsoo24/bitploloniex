@@ -162,6 +162,7 @@
 .card p{
   font-size: 0.8rem;
   font-family: 'helvetica-neue-cyr-bold';
+  color: #333333;
 }
 .card.active::after {
   content: '';
