@@ -33,7 +33,7 @@
         </a>
       </div>
 
-      <!-- services cards -->
+      <!-- feature items cards -->
       <div class="row container">
         <div class="column">
           <div class="card border-rounded">
@@ -104,6 +104,21 @@
 </script>
 
 <style scoped>
+/* fonts */
+@font-face {
+    font-family: "helvetica-neue-cyr-black";
+    src: url("../assets/fonts/HelveticaNeueCyr-Black.otf") format("woff"),
+        url("../assets/fonts/HelveticaNeueCyr-Black.otf") format("opentype"),
+        url("../assets/fonts/HelveticaNeueCyr-Black.otf") format("truetype");
+}
+
+@font-face {
+   font-family: "helvetica-neue-cyr-bold";
+    src: url("../assets/fonts/HelveticaNeueCyr-Bold.otf") format("woff"),
+        url("../assets/fonts/HelveticaNeueCyr-Bold.otf") format("opentype"),
+        url("../assets/fonts/HelveticaNeueCyr-Bold.otf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -114,7 +129,10 @@
   width: 25%;
   padding: 0 20px;
 }
-.row {margin: -50px 100px;}
+
+.row {
+  margin: -3rem auto;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -125,16 +143,53 @@
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 10px 40px -16px rgba(0,0,0,.4); /* this adds the "card" effect */
+  box-shadow: 0 10px 40px -16px rgba(0, 0, 0, .4);
+  /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
   background-color: #fff;
   transition: transform 0.3s ease;
   cursor: pointer;
+  position: relative;
+  margin: 0 2.5%;
 }
 
-.trading{
+.trading {
   margin-top: 100px;
+}
+
+
+.card p{
+  font-size: 0.8rem;
+  font-family: 'helvetica-neue-cyr-bold';
+}
+.card.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background-color: #fdd731
+}
+
+.card img {
+  transition: filter 1s linear
+}
+
+.card:hover {
+  transform: translateY(-10%)
+}
+
+.card:hover img {
+  animation: hue .8s linear infinite
+}
+
+.card figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px
 }
 
 
@@ -146,9 +201,10 @@
     display: block;
     margin-bottom: 20px;
   }
+
   .row {
     margin: 0px;
-    }
+  }
 }
 
 </style>
