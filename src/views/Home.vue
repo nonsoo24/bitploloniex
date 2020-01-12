@@ -80,13 +80,73 @@
         </div>
       </div>
 
+      <!-- Trading strategy -->
       <div class="container">
-         <h5 class="text-uppercase trading text-center">Our Trading Strategy</h5>
-          <ul>
-            <li>Bull<span>To increase</span></li>
-            <li>Bear<span>To decrease</span></li>
-            <li>Flat<span>Quotation</span></li>
-          </ul>
+        <h5 class="text-uppercase trading text-center">Our Trading Strategy</h5>
+        <ul>
+          <li class="">
+            <div
+              class="strategy-list__item strategy-list__item_bull flex flex-column justify-between width-30 relative">
+              Bull<span>To increase</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              Bear<span>To decrease</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              Flat<span>Quotation</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="textuppercase">Mission</h3>
+      <div class="grid-container">
+        <div>
+          <h5>SOCIAL POLITICS</h5>
+          <p>IMAGE is an indicator of stability, reliability and prosperity, social responsibility for us, which
+            increases the credibility of the company.</p>
+        </div>
+        <div>
+          <h5>QUALIFICATION</h5>
+          <p>Our mission is to provide you with training, technology, capital and mentoring so that you become an elite
+            trader.</p>
+        </div>
+
+        <div>
+          <h5>STABILITY</h5>
+          <p>The staff is tripled compared to last year. And it continues to grow.</p>
+        </div>
+
+        <div>
+          <h5>ADVERTISING</h5>
+          <p>Indicator of exemplary work and responsibility to customers, partners and the state, which is a significant
+            reason for an advertising campaign: publications in Internet resources, news feed, etc.</p>
+        </div>
+
+        <div>
+          <h5>GROWTH</h5>
+          <p>We are not the first in our industry, and therefore our professionals have proven in practice that this
+            tool that we use in the market is worthy of being the first in creating business models. We are in the best
+            trading positions based on a series of unique algorithms.</p>
+        </div>
+
+        <div>
+          <h5>SOCIAL POLITICS</h5>
+          <p>IMAGE is an indicator of stability, reliability and prosperity, social responsibility for us, which
+            increases the credibility of the company.</p>
+        </div>
+
+        <div>
+          <h5>PARTNERS</h5>
+          <p>In recent years, the company's net profit has been increasing annually due to the use of special
+            strategies, mutual respect and trust.</p>
+        </div>
       </div>
     </section>
   </div>
@@ -191,6 +251,13 @@
   justify-content: center;
   align-items: center;
   height: 50px
+}
+
+.grid-container{
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
 }
 
 
