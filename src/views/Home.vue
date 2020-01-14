@@ -104,8 +104,9 @@
       </div>
     </section>
 
-    <section>
-      <h3 class="textuppercase">Mission</h3>
+<!-- features list -->
+    <section feature-list>
+      <h3 class="text-uppercase text-white pt-5">Mission</h3>
       <div class="grid-container">
         <div class="feature-list">
           <h5>SOCIAL POLITICS</h5>
@@ -156,9 +157,43 @@
         </div>
       </div>
       <div class="text-center">
-           <button type="button" name="" id="" class="btn btn-primary"> Join</button>
+           <button type="button" class="btn btn-primary"> Join</button>
         </div>
     </section>
+
+    <!-- statistics -->
+    <section>
+    <div class="row">
+      <div class="col-md-6">
+        <dl>
+          <dt>2013</dt>
+          <dd>Our company has fully adapted to the most popular international markets.</dd>
+
+          <dt>2015</dt>
+          <dd>
+            Due to the fact that we have a huge experience in bear trading and the experience of crisis trading, our Company successfully earned more than USD 100 million in the Asian market collapse, thereby strengthening its reputation in the domestic market and proving to its partners that the company can earn in any market conditions.
+          </dd>
+
+          <dt>2016</dt>
+          <dd>
+            From the first days the company invested in the extraction of natural resources, precious metals and stones. In 2016, investments in the domestic market of South Africa began to bear serious fruit. BB Sheldon is seriously focused on the development of investments in the gold mining and diamond mining industry in South Africa and is the holder of the largest companies in the country.
+          </dd>
+
+          <dt>2019</dt>
+          <dd>
+            The trading staff, led by Logan Taylor and Robert Palmer, held a closed conference related to the huge promotion of cryptocurrency. Following the results of which it was decided to form a department that will be engaged in the development of crypto trading, monitor and analyze the market. Therefore, we provide an opportunity for private investors to make a profit due to all modern tools, on a par with professional traders. We had a need to create an Internet resource that would give novice investors the opportunity to develop with global traders and achieve maximum success. However, we are professionals in our field, and we do not miss more than one opportunity to increase our own capital and capital of our partners. We follow trends and know how to trade under any market conditions.
+        
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+    </section>
+
+    <!-- main question -->
+    <!-- <section>
+      <h5 class="text-uppercase">Main question</h5>
+    </section> -->
   </div>
 </template>
 
@@ -263,6 +298,8 @@
   height: 50px
 }
 
+/* feature list */
+
 .grid-container{
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -271,30 +308,34 @@
   margin: 4rem 2rem 0rem 2rem;
 }
 .feature-list{
-  border: 2px #000 solid;
-  padding: 2rem 2rem 1rem 4rem
+  border: 2px #fff solid;
+  padding: 2rem 2rem 1rem 4rem;
+  position: relative;
 }
 .grid-container p {
   font-size: 0.8rem;
   justify-items: start;
   text-align: left;
+  color: #fff;
 }
 
 .grid-container h5{
   text-align: left;
   justify-items: start;
   font-size: 1rem;
+  color: #fff;
 }
 
 .feature-icon{
-  border: 2px #000 solid;
+  border: 2px #fff solid;
   padding: 1rem;
   width: 65px;
   height: 65px;
-  position: relative;
-  right: 195px;
-  top: -70px;
-  border-radius: 50%
+  position: absolute;
+  right: 360px;
+  top: 50px;
+  border-radius: 50%;
+  background-color: #fff
   /* transform: translate(-50%,-50%); */
 }
 
@@ -303,7 +344,9 @@
   font-size: 0.875rem;
   padding: 0.4rem 1.4rem;
   background-color: #fdd731;
-  border: none
+  border: none;
+  text-transform: uppercase;
+  color: #000
 }
 
 .btn-primary:hover{
@@ -311,6 +354,33 @@
   transform:perspective(1px) translateZ(0);
   box-shadow:0 0 1px transparent;
   background-color: transparent;
+}
+
+[feature-list]{
+  background: url('../assets/img/doc.jpg');
+  margin-bottom: 80px;
+  padding-bottom: 50px
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+/* statistics */
+
+dl{
+  text-align: left;
+  font-family: "Roboto Condensed",sans-serif;
+  line-height: 1.7;
+  color: rgba(0,0,0,.8);
+  font-size: 0.8rem
+}
+
+dt{
+  color: #FDD731;
+  font-size: 1.875rem;
+  text-align: left;
+  /* font-family: "Roboto Condensed",sans-serif; */
 }
 
 
@@ -325,6 +395,52 @@
   .row {
     margin: 0px;
   }
+
+  /* feature list */
+  .grid-container{
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 1rem;
+  margin: 2rem 1rem 1rem 1rem;
+}
+.feature-list{
+  border: 2px #fff solid;
+  padding: 2rem 2rem 1rem 4rem;
+  position: relative;
+}
+.grid-container p {
+  font-size: 0.8rem;
+  justify-items: start;
+  text-align: left;
+  color: #fff;
+}
+
+.grid-container h5{
+  text-align: left;
+  justify-items: start;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.feature-icon{
+  border: 2px #fff solid;
+  padding: 1rem;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  right: 330px;
+  top: 40px;
+  border-radius: 50%;
+  background-color: #fff
+  /* transform: translate(-50%,-50%); */
+}
+[feature-list]{
+  margin-bottom: 40px;
+  padding-bottom: 40px
+}
+
+
 }
 
 </style>
