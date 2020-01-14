@@ -107,47 +107,57 @@
     <section>
       <h3 class="textuppercase">Mission</h3>
       <div class="grid-container">
-        <div>
+        <div class="feature-list">
           <h5>SOCIAL POLITICS</h5>
           <p>IMAGE is an indicator of stability, reliability and prosperity, social responsibility for us, which
-            increases the credibility of the company.</p>
+            increases the credibility of the company.
+          </p>
+          <div><img src="../assets/img/icon/shield.svg" alt="" class="feature-icon"></div>
         </div>
-        <div>
+
+        <div class="feature-list">
           <h5>QUALIFICATION</h5>
           <p>Our mission is to provide you with training, technology, capital and mentoring so that you become an elite
-            trader.</p>
+            trader.
+          </p>
+          <div><img src="../assets/img/icon/medal.svg" alt="" class="feature-icon"></div>
         </div>
 
-        <div>
+        <div class="feature-list">
           <h5>STABILITY</h5>
           <p>The staff is tripled compared to last year. And it continues to grow.</p>
+          <div><img src="../assets/img/icon/check.svg" alt="" class="feature-icon"></div>
         </div>
 
-        <div>
+        <div class="feature-list">
           <h5>ADVERTISING</h5>
           <p>Indicator of exemplary work and responsibility to customers, partners and the state, which is a significant
-            reason for an advertising campaign: publications in Internet resources, news feed, etc.</p>
+            reason for an advertising campaign: publications in Internet resources, news feed, etc.
+          </p>
+          <div><img src="../assets/img/icon/eye.svg" alt="" class="feature-icon"></div>
         </div>
 
-        <div>
+        <div class="feature-list">
           <h5>GROWTH</h5>
           <p>We are not the first in our industry, and therefore our professionals have proven in practice that this
             tool that we use in the market is worthy of being the first in creating business models. We are in the best
-            trading positions based on a series of unique algorithms.</p>
+            trading positions based on a series of unique algorithms.
+          </p>
+          <div><img src="../assets/img/icon/arrow-up.svg" alt="" class="feature-icon"></div>
         </div>
 
-        <div>
-          <h5>SOCIAL POLITICS</h5>
-          <p>IMAGE is an indicator of stability, reliability and prosperity, social responsibility for us, which
-            increases the credibility of the company.</p>
-        </div>
 
-        <div>
+        <div class="feature-list">
           <h5>PARTNERS</h5>
           <p>In recent years, the company's net profit has been increasing annually due to the use of special
-            strategies, mutual respect and trust.</p>
+            strategies, mutual respect and trust.
+          </p>
+          <div><img src="../assets/img/icon/user.svg" alt="" class="feature-icon"></div>
         </div>
       </div>
+      <div class="text-center">
+           <button type="button" name="" id="" class="btn btn-primary"> Join</button>
+        </div>
     </section>
   </div>
 </template>
@@ -254,12 +264,54 @@
 }
 
 .grid-container{
-  grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 3rem;
+  margin: 4rem 2rem 0rem 2rem;
+}
+.feature-list{
+  border: 2px #000 solid;
+  padding: 2rem 2rem 1rem 4rem
+}
+.grid-container p {
+  font-size: 0.8rem;
+  justify-items: start;
+  text-align: left;
 }
 
+.grid-container h5{
+  text-align: left;
+  justify-items: start;
+  font-size: 1rem;
+}
+
+.feature-icon{
+  border: 2px #000 solid;
+  padding: 1rem;
+  width: 65px;
+  height: 65px;
+  position: relative;
+  right: 195px;
+  top: -70px;
+  border-radius: 50%
+  /* transform: translate(-50%,-50%); */
+}
+
+.btn-primary{
+  border-radius: 100px;
+  font-size: 0.875rem;
+  padding: 0.4rem 1.4rem;
+  background-color: #fdd731;
+  border: none
+}
+
+.btn-primary:hover{
+  color:rgba(0,0,0,.8);
+  transform:perspective(1px) translateZ(0);
+  box-shadow:0 0 1px transparent;
+  background-color: transparent;
+}
 
 
 /* Responsive columns - one column layout (vertical) on small screens */
